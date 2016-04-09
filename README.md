@@ -31,7 +31,7 @@ of a simple SAP (Single Page Application).
 		+ Templates: You define the structure of HTML and provide slots, then you can plug in any data you want. Can be generated from a string with templating code in it or by writing html-like DOM stuff - handlebars is the former and Angular directives is the latter.
 
 
-## Pre-requisities - [documentation][http://backbonejs.org/]
+## Pre-requisities - http://backbonejs.org
 
 Backbone's only hard dependency is Underscore.js. 
 For RESTful persistence and DOM manipulation with Backbone.View, include jQuery ( >= 1.11.0), and json2.js for older Internet Explorer support. 
@@ -46,7 +46,7 @@ For RESTful persistence and DOM manipulation with Backbone.View, include jQuery 
 - Who comes from a Jquery background , backbone provides a good integration with Jquery ( >= 1.11.0). 
 - Light & fast.
 - 3rd party templating with underscore, but there are others.
-- Marionette brings a fresh and new features to back, it is a framework for backbone. Or in other words, a framework inside a framework. OK! It seems a little awkward , dont ?
+- Using [Marionette framework](http://backbonejs.org), it brings a robust and new features to backbone, it is a framework for backbone. Or in other words, a framework inside a framework. OK! It seems a little awkward , dont ?
 
 
 ## Cons
