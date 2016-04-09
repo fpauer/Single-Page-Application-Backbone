@@ -1,7 +1,5 @@
 # Single Page Application with Backbone 1.3.3
 
-## Proposal
-
 The idea is to check how is the entire process since install the js framework till the final version
 of a simple SAP (Single Page Application).
 
