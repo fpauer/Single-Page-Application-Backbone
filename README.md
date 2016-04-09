@@ -22,17 +22,22 @@ of a simple SAP (Single Page Application).
 ###Some terminologies
 
 * Two way data binding
-I change something in the view (UI), the model (state data) changes automatically. I change the model, the view changes automatically. See: http://n12v.com/2-way-data-binding/ especially the angular example is pretty concise. Saves a lot of time and reduces bullshit boilerplate code.
+	- I change something in the view (UI), the model (state data) changes automatically. I change the model, the view changes automatically. See: http://n12v.com/2-way-data-binding/ especially the angular example is pretty concise. Saves a lot of time and reduces bullshit boilerplate code.
 
 * Dependency injection
+	- A technique where the framework loads modules automatically for you. So let’s say your app needs a NetworkGraphVisualization and that one requires a D3Visualization and a SliderWidget, which in turn requires JQuery, a dependency injection framework will initialize all that junk for you. This also encourages separation of concerns.
 
-A technique where the framework loads modules automatically for you. So let’s say your app needs a NetworkGraphVisualization and that one requires a D3Visualization and a SliderWidget, which in turn requires JQuery, a dependency injection framework will initialize all that junk for you. This also encourages separation of concerns.
-
-	+ Routing: Being able to index a specific view in the app with a specific URL and having the URL change with the app state.
-	+ Templates: You define the structure of HTML and provide slots, then you can plug in any data you want. Can be generated from a string with templating code in it or by writing html-like DOM stuff - handlebars is the former and Angular directives is the latter.
+		+ Routing: Being able to index a specific view in the app with a specific URL and having the URL change with the app state.
+		+ Templates: You define the structure of HTML and provide slots, then you can plug in any data you want. Can be generated from a string with templating code in it or by writing html-like DOM stuff - handlebars is the former and Angular directives is the latter.
 
 
-## Instalation
+## Pre-requisities - [documentation][http://backbonejs.org/]
+
+Backbone's only hard dependency is Underscore.js. 
+For RESTful persistence and DOM manipulation with Backbone.View, include jQuery ( >= 1.11.0), and json2.js for older Internet Explorer support. 
+
+
+## Installation
 
 
 ## Pros
