@@ -1,6 +1,6 @@
 # Single Page Application with Backbone 1.3.3
 
-The idea is to check how is the entire process since install the js framework till the final version
+The idea is to check how is the entire process since install the js MVC "framework" till the final version
 of a simple SAP (Single Page Application).
 
 ## Some concepts about MVC (or derivatives, MVP / MVVM).
@@ -31,13 +31,17 @@ of a simple SAP (Single Page Application).
 
 ## Pre-requisities - http://backbonejs.org
 
-Backbone's only hard dependency is Underscore.js. 
-For RESTful persistence and DOM manipulation with Backbone.View, include jQuery ( >= 1.11.0), and json2.js for older Internet Explorer support. 
+Backbone has a hard dependency on [Underscore.js](http://underscorejs.org/) (>=1.8.3). 
+For RESTful persistence and DOM manipulation with Backbone.View, include [jQuery](https://jquery.com/) ( >= 1.11.0), and json2.js for older Internet Explorer support. 
 
 
 ## Installation
 
+Include this js files in your page.
 
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js" type="text/javascript"></script>
+  <script src="http://underscorejs.org/underscore-min.js" type="text/javascript"></script>
+  <script src="http://backbonejs.org/backbone-min.js" type="text/javascript"></script>
 
 
 ## Pros
@@ -48,8 +52,13 @@ For RESTful persistence and DOM manipulation with Backbone.View, include jQuery 
 
 
 ## Cons
-- No two way binding
-- Views manipulate DOM directly, I can make some mistakes and it is hard to test
+- No two way binding, there is just one way binding.
+- Views manipulate DOM directly, you can make some mistakes and it is hard to test.
 
+## Patterns Used
+
+- MVC (Model-View-Controller) however Backbone is MVT(Model-View-Template).
+- [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern): Backbone.Events.
+- 
 
 ## Conclusion
